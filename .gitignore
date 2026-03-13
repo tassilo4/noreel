@@ -13,10 +13,11 @@ node_modules/
 dist/
 
 # Native builds
-ios/Pods/
-ios/*.xcworkspace
-android/.gradle/
-android/build/
+**/ios/Pods/
+**/ios/Pods 2/
+**/ios/*.xcworkspace
+**/android/.gradle/
+**/android/build/
 
 # Environment variables
 .env
