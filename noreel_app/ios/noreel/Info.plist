@@ -7,7 +7,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>noreel</string>
+    <string>Noreel</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -27,8 +27,8 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>noreel</string>
-          <string>com.tassiloar.noreel</string>
+          <string>Noreel</string>
+          <string>com.parsekInc.Noreel</string>
         </array>
       </dict>
     </array>

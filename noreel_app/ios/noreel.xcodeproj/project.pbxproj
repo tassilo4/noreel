@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		179387DEEC2CFAF744AD1DAE /* libPods-Noreel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BB9098EAAB5C03FAFF1BAB /* libPods-Noreel.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		9CAA6E72FCF468394BA8029B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2773D4B6E740F6AF5E10D740 /* ExpoModulesProvider.swift */; };
+		40D73944CAD0317E48296540 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 96FA991A36F4CBEC00855731 /* PrivacyInfo.xcprivacy */; };
+		8646F2F37905BB36926E44A8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D66DB04B3C47532116DF4 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		DFAB815FB978896EF43A381D /* libPods-noreel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB69AD56709EA856CE1C3B /* libPods-noreel.a */; };
-		EE2FFCA4DF6F9704EE8FB47C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 45D7C6AE70CBEF8914E6560F /* PrivacyInfo.xcprivacy */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11EB69AD56709EA856CE1C3B /* libPods-noreel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-noreel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* noreel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noreel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = noreel/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = noreel/Info.plist; sourceTree = "<group>"; };
-		2773D4B6E740F6AF5E10D740 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-noreel/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		45D7C6AE70CBEF8914E6560F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = noreel/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		53FD6AA8023B1172695B223D /* Pods-noreel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noreel.debug.xcconfig"; path = "Target Support Files/Pods-noreel/Pods-noreel.debug.xcconfig"; sourceTree = "<group>"; };
-		7C883E40692A29993838C5B6 /* Pods-noreel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noreel.release.xcconfig"; path = "Target Support Files/Pods-noreel/Pods-noreel.release.xcconfig"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = noreel/SplashScreen.storyboard; sourceTree = "<group>"; };
+		023D66DB04B3C47532116DF4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Noreel/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Noreel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noreel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Noreel/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Noreel/Info.plist; sourceTree = "<group>"; };
+		51BB9098EAAB5C03FAFF1BAB /* libPods-Noreel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Noreel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B29F5336242701CC087B581 /* Pods-Noreel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noreel.release.xcconfig"; path = "Target Support Files/Pods-Noreel/Pods-Noreel.release.xcconfig"; sourceTree = "<group>"; };
+		948712442A9E256013DF9865 /* Pods-Noreel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Noreel.debug.xcconfig"; path = "Target Support Files/Pods-Noreel/Pods-Noreel.debug.xcconfig"; sourceTree = "<group>"; };
+		96FA991A36F4CBEC00855731 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Noreel/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Noreel/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = noreel/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* noreel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "noreel-Bridging-Header.h"; path = "noreel/noreel-Bridging-Header.h"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Noreel/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* Noreel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Noreel-Bridging-Header.h"; path = "Noreel/Noreel-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,50 +37,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFAB815FB978896EF43A381D /* libPods-noreel.a in Frameworks */,
+				179387DEEC2CFAF744AD1DAE /* libPods-Noreel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0981B616E03748AC6616DC22 /* Pods */ = {
+		032C9147D75C3768C9451CFF /* Noreel */ = {
 			isa = PBXGroup;
 			children = (
-				53FD6AA8023B1172695B223D /* Pods-noreel.debug.xcconfig */,
-				7C883E40692A29993838C5B6 /* Pods-noreel.release.xcconfig */,
+				023D66DB04B3C47532116DF4 /* ExpoModulesProvider.swift */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Noreel;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* noreel */ = {
+		13B07FAE1A68108700A75B9A /* Noreel */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* noreel-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* Noreel-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				45D7C6AE70CBEF8914E6560F /* PrivacyInfo.xcprivacy */,
+				96FA991A36F4CBEC00855731 /* PrivacyInfo.xcprivacy */,
 			);
-			name = noreel;
+			name = Noreel;
 			sourceTree = "<group>";
 		};
-		23174B571F71C6866624E839 /* noreel */ = {
+		1F02FC509C4C6624D03086D7 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				2773D4B6E740F6AF5E10D740 /* ExpoModulesProvider.swift */,
+				032C9147D75C3768C9451CFF /* Noreel */,
 			);
-			name = noreel;
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				11EB69AD56709EA856CE1C3B /* libPods-noreel.a */,
+				51BB9098EAAB5C03FAFF1BAB /* libPods-Noreel.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,12 +93,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* noreel */,
+				13B07FAE1A68108700A75B9A /* Noreel */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				0981B616E03748AC6616DC22 /* Pods */,
-				E19D6999D85A9274246169E1 /* ExpoModulesProviders */,
+				AEF4D004272680911B2F078D /* Pods */,
+				1F02FC509C4C6624D03086D7 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -110,9 +108,19 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* noreel.app */,
+				13B07F961A680F5B00A75B9A /* Noreel.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF4D004272680911B2F078D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				948712442A9E256013DF9865 /* Pods-Noreel.debug.xcconfig */,
+				8B29F5336242701CC087B581 /* Pods-Noreel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -121,40 +129,32 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = noreel/Supporting;
-			sourceTree = "<group>";
-		};
-		E19D6999D85A9274246169E1 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				23174B571F71C6866624E839 /* noreel */,
-			);
-			name = ExpoModulesProviders;
+			path = Noreel/Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* noreel */ = {
+		13B07F861A680F5B00A75B9A /* Noreel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "noreel" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Noreel" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				3C7BAFB64D3871BA3713A32E /* [Expo] Configure project */,
+				81294707172781B5F1E53D7A /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				5D9AB2CC7079C65CFC020E93 /* [CP] Embed Pods Frameworks */,
+				8B44E0B25BB2671169AA8813 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = noreel;
-			productName = noreel;
-			productReference = 13B07F961A680F5B00A75B9A /* noreel.app */;
+			name = Noreel;
+			productName = Noreel;
+			productReference = 13B07F961A680F5B00A75B9A /* Noreel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "noreel" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Noreel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* noreel */,
+				13B07F861A680F5B00A75B9A /* Noreel */,
 			);
 		};
 /* End PBXProject section */
@@ -198,7 +198,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				EE2FFCA4DF6F9704EE8FB47C /* PrivacyInfo.xcprivacy in Resources */,
+				40D73944CAD0317E48296540 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,57 +237,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-noreel-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Noreel-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C7BAFB64D3871BA3713A32E /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/.xcode.env",
-				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/noreel/noreel.entitlements",
-				"$(SRCROOT)/Pods/Target Support Files/Pods-noreel/expo-configure-project.sh",
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Pods/Target Support Files/Pods-noreel/ExpoModulesProvider.swift",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-noreel/expo-configure-project.sh\"\n";
-		};
-		5D9AB2CC7079C65CFC020E93 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-noreel/Pods-noreel-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noreel/Pods-noreel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
@@ -296,7 +250,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-noreel/Pods-noreel-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Noreel/Pods-Noreel-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoDevice/ExpoDevice_privacy.bundle",
@@ -323,7 +277,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noreel/Pods-noreel-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noreel/Pods-Noreel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81294707172781B5F1E53D7A /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env",
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/Noreel/Noreel.entitlements",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-Noreel/expo-configure-project.sh",
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Pods/Target Support Files/Pods-Noreel/ExpoModulesProvider.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Noreel/expo-configure-project.sh\"\n";
+		};
+		8B44E0B25BB2671169AA8813 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Noreel/Pods-Noreel-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Noreel/Pods-Noreel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -334,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				9CAA6E72FCF468394BA8029B /* ExpoModulesProvider.swift in Sources */,
+				8646F2F37905BB36926E44A8 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,18 +343,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53FD6AA8023B1172695B223D /* Pods-noreel.debug.xcconfig */;
+			baseConfigurationReference = 948712442A9E256013DF9865 /* Pods-Noreel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = noreel/noreel.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Noreel/Noreel.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = noreel/Info.plist;
+				INFOPLIST_FILE = Noreel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,9 +367,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tassiloar.noreel;
-				PRODUCT_NAME = noreel;
-				SWIFT_OBJC_BRIDGING_HEADER = "noreel/noreel-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parsekInc.Noreel;
+				PRODUCT_NAME = Noreel;
+				SWIFT_OBJC_BRIDGING_HEADER = "Noreel/Noreel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,13 +382,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C883E40692A29993838C5B6 /* Pods-noreel.release.xcconfig */;
+			baseConfigurationReference = 8B29F5336242701CC087B581 /* Pods-Noreel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = noreel/noreel.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Noreel/Noreel.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = noreel/Info.plist;
+				INFOPLIST_FILE = Noreel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,9 +401,9 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tassiloar.noreel;
-				PRODUCT_NAME = noreel;
-				SWIFT_OBJC_BRIDGING_HEADER = "noreel/noreel-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = com.parsekInc.Noreel;
+				PRODUCT_NAME = Noreel;
+				SWIFT_OBJC_BRIDGING_HEADER = "Noreel/Noreel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -534,7 +534,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "noreel" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Noreel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -543,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "noreel" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Noreel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
