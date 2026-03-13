@@ -166,7 +166,7 @@ export const HeatmapChart = ({ data, config = {}, style }: Props) => {
   const chartHeight = height - padding * 2;
 
   // Calculate cell dimensions with spacing
-  const cellSpacing = 2;
+  const cellSpacing = 10;
   const cellWidth = (innerChartWidth - (numCols - 1) * cellSpacing) / numCols;
   const cellTotalHeight = (chartHeight - (numRows - 1) * cellSpacing) / numRows;
   const cellHeight = cellTotalHeight; // kept for row label positioning

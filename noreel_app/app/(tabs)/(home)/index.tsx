@@ -13,6 +13,7 @@ export default function HomeScreen() {
   const { logs, reload } = useScreenTime();
   const border = useColor('border');
 
+
   useFocusEffect(useCallback(() => { reload(); }, [reload]));
 
   const loggedDays = Object.keys(logs).sort();
@@ -72,6 +73,7 @@ export default function HomeScreen() {
 
         </View>
       </View>
+
     </ScrollView>
   );
 }

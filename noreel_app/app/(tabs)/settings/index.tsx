@@ -10,7 +10,7 @@ import { useColor } from '@/hooks/useColor';
 import { useModeToggle } from '@/hooks/useModeToggle';
 
 export default function SettingsScreen() {
-  const { hideSponsored, setHideSponsored, hideExploreGrid, setHideExploreGrid } = useSettings();
+  const { hideExploreGrid, setHideExploreGrid } = useSettings();
   const { toggleMode, isDark } = useModeToggle();
   const accent = useColor('primary');
   const card = useColor('card');
@@ -57,20 +57,6 @@ export default function SettingsScreen() {
       <View style={{ width: '100%' }}>
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingVertical: 14 }}>
           <View style={{ flex: 1, gap: 2 }}>
-            <Text variant='body' style={{ fontWeight: '600' }}>Hide sponsored posts</Text>
-            <Text variant='caption' style={{ opacity: 0.6 }}>Remove ads from your feed</Text>
-          </View>
-          <Switch
-            value={hideSponsored}
-            onValueChange={setHideSponsored}
-            trackColor={{ true: accent }}
-          />
-        </View>
-      </View>
-
-      <View style={{ width: '100%' }}>
-        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingVertical: 14 }}>
-          <View style={{ flex: 1, gap: 2 }}>
             <Text variant='body' style={{ fontWeight: '600' }}>Hide explore grid</Text>
             <Text variant='caption' style={{ opacity: 0.6 }}>Keep search, remove suggested content</Text>
           </View>
@@ -100,7 +86,7 @@ export default function SettingsScreen() {
       >
         <View style={{ borderRadius: 16, backgroundColor: card, paddingHorizontal: 20, paddingVertical: 18, gap: 4 }}>
           <Text style={{ fontWeight: '700', fontSize: 16, color: cardForeground }}>Contact us 💬</Text>
-          <Text style={{ fontSize: 13, color: cardForeground, opacity: 0.6 }}>Get in touch with the team</Text>
+          <Text style={{ fontSize: 13, color: cardForeground, opacity: 0.6 }}>Get in touch with the team or DM us on Instagram @Noreelapp</Text>
         </View>
       </Pressable>
       <Text variant='caption' style={{ textAlign: 'center', opacity: 0.4, paddingHorizontal: 16 }}>

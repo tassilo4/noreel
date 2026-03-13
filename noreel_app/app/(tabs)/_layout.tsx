@@ -10,8 +10,8 @@ import {
 import { SettingsProvider } from '@/providers/settings-context';
 
 export default function TabsLayout() {
-  const primary = useColor('primary');
-  const foreground = useColor('foreground');
+  const tabDefault = useColor('tabIconDefault');
+  const tabSelected = useColor('tabIconSelected');
   const colorScheme = useColorScheme();
 
   return (
@@ -21,33 +21,28 @@ export default function TabsLayout() {
       lazy={false}
       minimizeBehavior='onScrollDown'
       labelStyle={{
-        default: { color: primary },
-        selected: { color: foreground },
+        default: { color: tabDefault },
+        selected: { color: tabSelected },
       }}
       iconColor={{
-        default: primary,
-        selected: foreground,
+        default: tabDefault,
+        selected: tabSelected,
       }}
       labelVisibilityMode='labeled'
       disableTransparentOnScrollEdge={true}
     >
       <NativeTabs.Trigger name='(home)'>
         {Platform.select({
-          ios: <Icon sf='house.fill' />,
+          ios: <Icon sf='chart.bar.fill' />,
           android: (
-            <Icon src={<VectorIcon family={MaterialIcons} name='home' />} />
+            <Icon src={<VectorIcon family={MaterialIcons} name='bar-chart-2' />} />
           ),
         })}
-        <Label>Home</Label>
+        <Label>Usage</Label>
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name='instagram'>
-        {Platform.select({
-          ios: <Icon sf='newspaper' />,
-          android: (
-            <Icon src={<VectorIcon family={MaterialIcons} name='book-open' />} />
-          ),
-        })}
+        <Icon src={require('@/assets/images/InstaNavIcon.png')} />
         <Label>Instagram</Label>
       </NativeTabs.Trigger>
 

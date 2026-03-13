@@ -1,8 +1,6 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react';
 
 interface SettingsContextType {
-  hideSponsored: boolean;
-  setHideSponsored: (value: boolean) => void;
   hideExploreGrid: boolean;
   setHideExploreGrid: (value: boolean) => void;
 }
@@ -10,11 +8,10 @@ interface SettingsContextType {
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
 
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [hideSponsored, setHideSponsored] = useState(true);
   const [hideExploreGrid, setHideExploreGrid] = useState(true);
 
   return (
-    <SettingsContext.Provider value={{ hideSponsored, setHideSponsored, hideExploreGrid, setHideExploreGrid }}>
+    <SettingsContext.Provider value={{ hideExploreGrid, setHideExploreGrid }}>
       {children}
     </SettingsContext.Provider>
   );
