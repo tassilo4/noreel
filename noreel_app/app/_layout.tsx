@@ -2,6 +2,13 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import { Colors } from '@/theme/colors';
 import { ThemeProvider } from '@/theme/theme-provider';
 import { osName } from 'expo-device';
+import {
+  DMSans_400Regular,
+  DMSans_500Medium,
+  DMSans_700Bold,
+  DMSans_800ExtraBold,
+  useFonts,
+} from '@expo-google-fonts/dm-sans';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as NavigationBar from 'expo-navigation-bar';
 import { Stack } from 'expo-router';
@@ -20,6 +27,16 @@ SplashScreen.setOptions({
 
 export default function RootLayout() {
   const colorScheme = useColorScheme() || 'light';
+  const [fontsLoaded] = useFonts({
+    DMSans_400Regular,
+    DMSans_500Medium,
+        DMSans_700Bold,
+    DMSans_800ExtraBold,
+  });
+
+  useEffect(() => {
+    if (fontsLoaded) SplashScreen.hideAsync();
+  }, [fontsLoaded]);
 
   useEffect(() => {
     if (Platform.OS === 'android') {
@@ -35,6 +52,8 @@ export default function RootLayout() {
       colorScheme === 'dark' ? Colors.dark.background : Colors.light.background
     );
   }, [colorScheme]);
+
+  if (!fontsLoaded) return null;
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

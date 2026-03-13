@@ -2,18 +2,31 @@ import { useColor } from '@/hooks/useColor';
 import { FONT_SIZE } from '@/theme/globals';
 import React, { forwardRef } from 'react';
 import {
+  StyleSheet,
   Text as RNText,
   TextProps as RNTextProps,
   TextStyle,
 } from 'react-native';
 
-type TextVariant =
-  | 'body'
-  | 'title'
-  | 'subtitle'
-  | 'caption'
-  | 'heading'
-  | 'link';
+const WEIGHT_TO_FAMILY: Record<string, string> = {
+  '100': 'DMSans_400Regular',
+  '200': 'DMSans_400Regular',
+  '300': 'DMSans_400Regular',
+  '400': 'DMSans_400Regular',
+  '500': 'DMSans_500Medium',
+  '600': 'DMSans_500Medium',
+  '700': 'DMSans_700Bold',
+  '800': 'DMSans_800ExtraBold',
+  '900': 'DMSans_800ExtraBold',
+  normal: 'DMSans_400Regular',
+  bold: 'DMSans_700Bold',
+};
+
+function resolveFontFamily(weight?: TextStyle['fontWeight']): string {
+  return WEIGHT_TO_FAMILY[String(weight ?? '400')] ?? 'DMSans_400Regular';
+}
+
+type TextVariant = 'body' | 'title' | 'subtitle' | 'caption' | 'heading' | 'link';
 
 interface TextProps extends RNTextProps {
   variant?: TextVariant;
@@ -23,62 +36,37 @@ interface TextProps extends RNTextProps {
 }
 
 export const Text = forwardRef<RNText, TextProps>(
-  (
-    { variant = 'body', lightColor, darkColor, style, children, ...props },
-    ref
-  ) => {
+  ({ variant = 'body', lightColor, darkColor, style, children, ...props }, ref) => {
     const textColor = useColor('text', { light: lightColor, dark: darkColor });
     const mutedColor = useColor('textMuted');
 
-    const getTextStyle = (): TextStyle => {
-      const baseStyle: TextStyle = {
-        color: textColor,
-      };
-
+    const getVariantStyle = (): TextStyle => {
       switch (variant) {
         case 'heading':
-          return {
-            ...baseStyle,
-            fontSize: 28,
-            fontWeight: '800',
-          };
+          return { color: textColor, fontSize: 28, fontFamily: 'DMSans_800ExtraBold' };
         case 'title':
-          return {
-            ...baseStyle,
-            fontSize: 24,
-            fontWeight: '700',
-          };
+          return { color: textColor, fontSize: 24, fontFamily: 'DMSans_700Bold' };
         case 'subtitle':
-          return {
-            ...baseStyle,
-            fontSize: 19,
-            fontWeight: '600',
-          };
+          return { color: textColor, fontSize: 19, fontFamily: 'DMSans_500Medium' };
         case 'caption':
-          return {
-            ...baseStyle,
-            fontSize: FONT_SIZE,
-            fontWeight: '400',
-            color: mutedColor,
-          };
+          return { color: mutedColor, fontSize: FONT_SIZE, fontFamily: 'DMSans_400Regular' };
         case 'link':
-          return {
-            ...baseStyle,
-            fontSize: FONT_SIZE,
-            fontWeight: '500',
-            textDecorationLine: 'underline',
-          };
-        default: // 'body'
-          return {
-            ...baseStyle,
-            fontSize: FONT_SIZE,
-            fontWeight: '400',
-          };
+          return { color: textColor, fontSize: FONT_SIZE, fontFamily: 'DMSans_500Medium', textDecorationLine: 'underline' };
+        default:
+          return { color: textColor, fontSize: FONT_SIZE, fontFamily: 'DMSans_400Regular' };
       }
     };
 
+    // Flatten the user's style so we can intercept fontWeight and map it to the right family
+    const flat = StyleSheet.flatten(style) as TextStyle | undefined;
+    const overrideFamily = flat?.fontWeight ? resolveFontFamily(flat.fontWeight) : undefined;
+    const finalStyle: TextStyle[] = [
+      getVariantStyle(),
+      flat ? { ...flat, fontWeight: undefined, fontFamily: overrideFamily ?? flat.fontFamily ?? getVariantStyle().fontFamily } : {},
+    ];
+
     return (
-      <RNText ref={ref} style={[getTextStyle(), style]} {...props}>
+      <RNText ref={ref} style={finalStyle} {...props}>
         {children}
       </RNText>
     );

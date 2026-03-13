@@ -1,22 +1,24 @@
-import { Platform } from 'react-native';
+import { Platform, useColorScheme } from 'react-native';
 import { useColor } from '@/hooks/useColor';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import MaterialIcons from '@expo/vector-icons/Feather';
 import {
-  Badge,
   Icon,
   Label,
   NativeTabs,
   VectorIcon,
 } from 'expo-router/unstable-native-tabs';
+import { SettingsProvider } from '@/providers/settings-context';
 
 export default function TabsLayout() {
-  const red = useColor('red');
   const primary = useColor('primary');
   const foreground = useColor('foreground');
+  const colorScheme = useColorScheme();
 
   return (
+    <SettingsProvider>
     <NativeTabs
+      key={colorScheme}
+      lazy={false}
       minimizeBehavior='onScrollDown'
       labelStyle={{
         default: { color: primary },
@@ -26,7 +28,6 @@ export default function TabsLayout() {
         default: primary,
         selected: foreground,
       }}
-      badgeBackgroundColor={red}
       labelVisibilityMode='labeled'
       disableTransparentOnScrollEdge={true}
     >
@@ -40,6 +41,16 @@ export default function TabsLayout() {
         <Label>Home</Label>
       </NativeTabs.Trigger>
 
+      <NativeTabs.Trigger name='instagram'>
+        {Platform.select({
+          ios: <Icon sf='newspaper' />,
+          android: (
+            <Icon src={<VectorIcon family={MaterialIcons} name='book-open' />} />
+          ),
+        })}
+        <Label>Instagram</Label>
+      </NativeTabs.Trigger>
+
       <NativeTabs.Trigger name='settings'>
         {Platform.select({
           ios: <Icon sf='gear' />,
@@ -48,21 +59,9 @@ export default function TabsLayout() {
           ),
         })}
         <Label>Settings</Label>
-        <Badge>1</Badge>
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger
-        name='search'
-        role={isLiquidGlassAvailable() ? 'search' : undefined}
-      >
-        {Platform.select({
-          ios: <Icon sf='magnifyingglass' />,
-          android: (
-            <Icon src={<VectorIcon family={MaterialIcons} name='search' />} />
-          ),
-        })}
-        <Label>Search</Label>
-      </NativeTabs.Trigger>
     </NativeTabs>
+    </SettingsProvider>
   );
 }

@@ -22,9 +22,7 @@ export default function HomeLayout() {
             ? 'systemMaterialDark'
             : 'systemMaterialLight',
         headerStyle: {
-          backgroundColor: isLiquidGlassAvailable()
-            ? 'transparent'
-            : background,
+          backgroundColor: isLiquidGlassAvailable() ? 'transparent' : background,
         },
       }}
     >
