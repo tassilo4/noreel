@@ -81,7 +81,7 @@ export default function SettingsScreen() {
         </View>
       </Pressable>
       <Pressable
-        onPress={() => Linking.openURL('https://example.com/contact')}
+        onPress={() => Linking.openURL('https://noreel.framer.website/')}
         style={({ pressed }) => ({ width: '100%', opacity: pressed ? 0.7 : 1 })}
       >
         <View style={{ borderRadius: 16, backgroundColor: card, paddingHorizontal: 20, paddingVertical: 18, gap: 4 }}>

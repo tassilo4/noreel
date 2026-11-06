@@ -11,11 +11,16 @@ node_modules/
 # Expo
 .expo/
 dist/
+web-build/
 
 # Native builds
 **/ios/Pods/
 **/ios/Pods 2/
 **/ios/*.xcworkspace
+**/ios/build/
+**/ios/DerivedData/
+**/ios/**/*.xcuserstate
+**/ios/**/xcuserdata/
 **/android/.gradle/
 **/android/build/
 
@@ -36,3 +41,6 @@ yarn-error.log*
 
 # EAS
 .easignore
+
+# Local debugging snapshots
+*_html.txt
