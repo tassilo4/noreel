@@ -76,7 +76,6 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
     ref
   ) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [activeIndex, setActiveIndex] = useState(0);
     const inputRef = useRef<TextInput>(null);
 
     // Theme colors
@@ -86,7 +85,6 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
     const borderColor = useColor('border');
     const primary = useColor('primary');
     const danger = useColor('red');
-    const background = useColor('background');
 
     // Normalize value to ensure it doesn't exceed length
     const normalizedValue = value.slice(0, length);
@@ -100,7 +98,6 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
       blur: () => inputRef.current?.blur(),
       clear: () => {
         onChangeText?.('');
-        setActiveIndex(0);
       },
       getValue: () => normalizedValue,
     }));
@@ -112,7 +109,6 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
         const limitedText = cleanText.slice(0, length);
 
         onChangeText?.(limitedText);
-        setActiveIndex(Math.min(limitedText.length, length - 1));
 
         // Call onComplete when OTP is fully entered
         if (limitedText.length === length) {
@@ -129,7 +125,6 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
         if (key === 'Backspace' && normalizedValue.length > 0) {
           const newValue = normalizedValue.slice(0, -1);
           onChangeText?.(newValue);
-          setActiveIndex(Math.max(0, newValue.length));
         }
       },
       [normalizedValue, onChangeText]
@@ -138,10 +133,9 @@ export const InputOTP = forwardRef<InputOTPRef, InputOTPProps>(
     const handleFocus = useCallback(
       (e: any) => {
         setIsFocused(true);
-        setActiveIndex(normalizedValue.length);
         onFocus?.(e);
       },
-      [normalizedValue.length, onFocus]
+      [onFocus]
     );
 
     const handleBlur = useCallback(

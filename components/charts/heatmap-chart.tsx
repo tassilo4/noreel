@@ -99,7 +99,7 @@ function HeatmapCell({
 
   useEffect(() => {
     animationProgress.value = withTiming(1, { duration });
-  }, []);
+  }, [animationProgress, duration]);
 
   const cellAnimatedProps = useAnimatedProps(() => ({
     opacity: withDelay(delay, withTiming(animationProgress.value, { duration: 300 })),
@@ -129,7 +129,6 @@ export const HeatmapChart = ({ data, config = {}, style }: Props) => {
     height = 200,
     padding = 20,
     showLabels = true,
-    animated = true,
     duration = 1000,
     colorScale = ['#e0f2fe', '#0369a1', '#1e3a8a'], // Light blue to dark blue
   } = config;

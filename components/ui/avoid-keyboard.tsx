@@ -34,6 +34,7 @@ export const AvoidKeyboard = ({ offset = 0, duration = 0 }: Props) => {
     keyboardHeight,
     keyboardAnimationDuration,
     isKeyboardVisible,
+    keyboardValue,
     offset,
     duration,
   ]);

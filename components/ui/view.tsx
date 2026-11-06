@@ -12,3 +12,5 @@ export const View = forwardRef<RNView, ViewProps>(
     );
   }
 );
+
+View.displayName = 'View';

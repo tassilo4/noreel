@@ -17,7 +17,6 @@ export default function OnboardingScreen() {
   const { top, bottom } = useSafeAreaInsets();
   const card = useColor('card');
   const cardForeground = useColor('cardForeground');
-  const textMuted = useColor('textMuted');
 
   async function handleGetStarted() {
     await AsyncStorage.setItem('onboarding_complete', 'true');

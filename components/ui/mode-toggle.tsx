@@ -34,7 +34,7 @@ export const ModeToggle = ({ variant = 'outline', size = 'icon' }: Props) => {
     if (!isDark) {
       rotation.value = withTiming(rotation.value + 180, { duration: 300 });
     }
-  }, [isDark]);
+  }, [isDark, rotation, scale]);
 
   const animatedStyle = useAnimatedStyle(() => {
     return {

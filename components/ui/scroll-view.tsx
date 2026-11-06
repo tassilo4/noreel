@@ -12,3 +12,5 @@ export const ScrollView = forwardRef<RNScrollView, ScrollViewProps>(
     );
   }
 );
+
+ScrollView.displayName = 'ScrollView';

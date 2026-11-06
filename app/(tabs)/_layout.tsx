@@ -18,7 +18,6 @@ export default function TabsLayout() {
     <SettingsProvider>
     <NativeTabs
       key={colorScheme}
-      lazy={false}
       minimizeBehavior='onScrollDown'
       labelStyle={{
         default: { color: tabDefault },

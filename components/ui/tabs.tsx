@@ -103,7 +103,7 @@ export function Tabs({
     }
   }, [value, isControlled, internalActiveTab]);
 
-  const setActiveTab = (newValue: string) => {
+  const setActiveTab = useCallback((newValue: string) => {
     if (!isControlled) {
       // Uncontrolled mode: update internal state
       setInternalActiveTab(newValue);
@@ -113,7 +113,7 @@ export function Tabs({
     if (onValueChange) {
       onValueChange(newValue);
     }
-  };
+  }, [isControlled, onValueChange]);
 
   const registerTab = useCallback((tabValue: string) => {
     setTabValues((prev) => {
@@ -232,7 +232,7 @@ function CarouselContainer({
     if (!isGestureActive.value) {
       translateX.value = withTiming(0, { duration: 300 });
     }
-  }, [activeTab]);
+  }, [activeTab, isGestureActive, translateX]);
 
   const panGesture = Gesture.Pan()
     .onBegin(() => {
@@ -467,7 +467,6 @@ export function TabsContent({ children, value, style }: TabsContentProps) {
     enableSwipe,
     orientation,
     navigateToAdjacentTab,
-    tabValues,
   } = useTabsContext();
   const isActive = activeTab === value;
 
